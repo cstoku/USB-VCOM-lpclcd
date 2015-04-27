@@ -1,0 +1,12 @@
+/Lib/
+/Descriptors.o
+/VirtualSerial.o
+/Descriptors.d
+/Example_VirtualSerialDevice_LPC11Uxx_lib.ld
+/Example_VirtualSerialDevice_LPC11Uxx_mem.ld
+/Example_VirtualSerialDevice_LPC11Uxx.ld
+/Example_VirtualSerialDevice.map
+/objects.mk
+/sources.mk
+/subdir.mk
+/VirtualSerial.d
