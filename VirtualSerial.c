@@ -157,14 +157,20 @@ void DisplayCharater(void)
 void i2c_send(unsigned char ch)
 {
 	switch(ch){
+	case '\t':
+		GPIOSetBitValue( 1, 3, 1); //OFF
+		break;
+	case '\v':
+		GPIOSetBitValue( 1, 3, 0); //ON
+		break;
 	case '\f':
-		i2c_cmd(0x01);
+		i2c_cmd(0x01); //Clear
 		break;
 	case '\a':
-		i2c_cmd(0x80);
+		i2c_cmd(0x80); //Line1
 		break;
 	case '\n':
-		i2c_cmd(0xC0);
+		i2c_cmd(0xC0); //Line2
 		break;
 	default:
 		i2c_data(ch);
